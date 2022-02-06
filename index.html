@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - GameMania</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header> 
+      <div class="container-grid cabecalho">  
+
+          <a href="index.html"><img class="Logo" src="img/logo.svg" alt="Logo GameMania"></a>
+          <form>
+              <input type="text">
+              <button>Pesquisar</button>
+            </form>
+            <nav id="menu" class="menu">
+                <a href="">Inicio</a>
+                <a href="">Minha conta</a>
+                <a href="">Promoção</a>
+                <a href="">Carrinho de compras</a>
+            </nav>
+            <a href="#" class="linkmenu" onclick="mostrarmenu()  "><img src="img/Menu.svg" alt="menu de barras"></a>
+        </div>
+        </header>
+        <section class="banner">
+
+        </section>
+
+        <script>
+            let menu = document.getElementById("menu");
+
+            function mostrarmenu() {
+                if (menu.style.display == "none") {
+                    menu.style.display = "flex";
+                } else {
+                    menu.style.display = "none";
+                }
+            }
+        </script>
+    
+</body>
+</html>
